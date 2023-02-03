@@ -1,0 +1,21 @@
+﻿<Window x:Class="Prog_124_W23_Lecture_8_Static.Shelter_Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog_124_W23_Lecture_8_Static"
+        mc:Ignorable="d"
+        Title="Shelter_Information" Height="450" Width="800">
+    <Grid Background="#FF6D85A9">
+        <TextBox x:Name="txtShelterName" HorizontalAlignment="Left" Margin="73,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <RichTextBox Margin="290,48,125,48">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplay" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="btnChangeName" Content="Change SHelter Name" HorizontalAlignment="Left" Margin="82,131,0,0" VerticalAlignment="Top" Height="31" Width="102" Click="btnChangeName_Click"/>
+        <Button x:Name="btnOpenWindow" Content="Open New Window" HorizontalAlignment="Left" Margin="82,197,0,0" VerticalAlignment="Top" Height="31" Width="102" Click="btnOpenWindow_Click"/>
+    </Grid>
+</Window>
